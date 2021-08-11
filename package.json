@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/goonookim/deploybottest/issues"
   },
-  "homepage": "https://github.com/goonookim/deploybottest#readme"
+  "homepage": "https://github.com/goonookim/deploybottest#readme",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-beanstalk-deploy": "^1.0.14",
+    "vinyl-fs": "^3.0.3"
+  }
 }
