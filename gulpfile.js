@@ -41,7 +41,7 @@ function uploadToEb({
   upload_file_name,
   add_tags
 }, cb) {
-  const ebAppName = 'personalized-related-news';
+  const ebAppName = 'slack';
 
   eb({
     region: 'ap-northeast-2',
@@ -69,9 +69,9 @@ gulp.task('deploy', async () => {
   const version = await devops.setVersionByTag();
   const timestamp = new Date().valueOf();
   const uploadFilename = `${version}-${timestamp}.zip`;
-  const sourceFilename = `personal-related-news-${uploadFilename}`;
+  const sourceFilename = `slack-1-${uploadFilename}`;
   const sourceFilePath = `/tmp/${sourceFilename}`;
-  const beanstalkEnvName = "personal-related-news";
+  const beanstalkEnvName = "slack-1";
   const addTags = {'stage': 'live', 'team1': 'dp', 'service': 'reco', 'function': 'web'};
 
   await promisify(archive)(sourceFilePath);
