@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/goonookim/deploybottest#readme",
   "devDependencies": {
+    "devops-infra": "teamdable/devops-infra#master",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-beanstalk-deploy": "^1.0.14",
