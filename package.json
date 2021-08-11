@@ -20,6 +20,7 @@
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-beanstalk-deploy": "^1.0.14",
+    "gulp-vinyl-zip": "^2.5.0",
     "vinyl-fs": "^3.0.3"
   }
 }
